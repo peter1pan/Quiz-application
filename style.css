@@ -1,0 +1,141 @@
+.btn_start,
+.quiz_box,
+.score_board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quiz_box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1.2);
+
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header .timer .time {
+    margin-left: 3px;
+}
+
+.time {
+    background-color: #e7b81b;
+    font-size: 15px;
+    text-align: center;
+    width: 20px;
+}
+
+.timer {
+    display: flex;
+    background-color: #151d3b;
+    color: #ffff;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.quiz_box {
+    width: 550px;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.quiz_box header .tittle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box .question_text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.quiz_box .option_list {
+    padding: 18px 0;
+}
+
+.quiz_box .option_list .option {
+    border: 1px solid #151d3b;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.quiz_box .option_list .option:hover {
+    color: #112b2c;
+    background: #ffd33d;
+}
+
+.quiz_box .option_list .option.correct {
+    color: #155724;
+    background: #d4eeda;
+}
+
+.quiz_box .option_list .option.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+
+.quiz_box .option_list .option.disabled {
+    pointer-events: none;
+}
+
+span {
+    pointer-events: none;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+
+.score_board.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1.2);
+
+}
+
+.score_board {
+    width: 550px;
+
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.score_board .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #0035f7;
+}
+
+.score_board .score_text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
